@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Сайт ЦОК</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div class="shadow"></div>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="professionalism">
+                    <div class="professionalism__title-wrap">
+                        <span class="professionalism__year">2023</span>
+                        <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/tent.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bus.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/ship.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/circle.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="header-title-wrap">
+                    <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                    <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                </div>
+    
+                <div class="logo-wrap">
+                    <img src="../img/logo/logo.svg" alt="logo" class="logo">
+                </div>
+    
+                <div class="home">
+                    <a href="../index.html"><img src="img/home.svg" alt="go home"></a>
+                </div>
+    
+                <button class="burger-btn">
+                    <img src="../img/burger.svg" alt="logo" class="burger-img">
+                    <img src="../img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                </button>
+    
+                <div class="right-side-menu">
+                    <button class="burger-btn-close">Закрыть</button>
+                    <div class="right-side-menu__block">
+                        <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                        <label class="switch-button" for="switch">
+                            <div class="switch-outer">
+                            <input id="switch" type="checkbox" class="dark2">
+                            <div class="button">
+                                <span class="button-toggle"></span>
+                                <span class="button-indicator"></span>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header__container -->
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Проектирование конструкций поясных изделий женской одежды</h1>
+                    <p class="topic-subtitle">#Конструирование, моделирование и технология изготовления изделий легкой промышленности</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Виртуальный тренажер</h4>
+
+                <div class="virtual-simulator__wrapper ">
+                    <div class="virtual-simulator__header">
+                        <div class="task-text">Задание: <br>
+                            <span class="accent-color-text">Установите соответствия</span>
+                        </div>
+                        <div class="delimeter"></div>
+                        <div class="question"><img src="img/question.svg" alt="?">
+                            <div class="block-answer">
+                                Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                            </div>
+                        </div>
+                        <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                        <div class="timer-wrap"><p class="timer">10:00</p></div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <div class="task-wrapper">
+                            <div class="quation-block quation-block-1" style="width: 250px;">Доброта</div>
+                            <div class="quation-block quation-block-2" style="width: 250px;">Гостеприимство</div>
+                            <div class="quation-block quation-block-3" style="width: 250px;">Доброта</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Вежливое и щедрое отношение к гостям или посетителям.</div>
+                            <div class="ansver-block">Благожелательность и забота о благополучии других людей.</div>
+                            <div class="ansver-block">Символ награды и признания за гостеприимство и доброту.</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <form action="">
+                            <div class="varian-radio">
+                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
+                                <div class="text-otvet">
+                                    <p>Вежливое и щедрое отношение к гостям или посетителям.</p>
+                                </div>
+                            </div>
+                            <div class="varian-radio">
+                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
+                                <div class="text-otvet">
+                                    <p>Кубок наполнен добротой и гостеприимством.</p>
+                                </div>
+                            </div>
+                            <div class="varian-radio">
+                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
+                                <div class="text-otvet">
+                                    <p>Доброта и гостеприимство не связаны друг с другом</p>
+                                </div>
+                            </div>
+                            <div class="varian-radio">
+                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
+                                <div class="text-otvet">
+                                    <p>Гостеприимство может проявляться через разные действия, не только доброту.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка?3</div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка?4</div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка?5</div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка?6 </div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка? 7</div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-8">
+                        <div class="task-wrapper">
+                            <div class="quation-block" style="width: 250px;">Что такое обтачка? 8</div>
+                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
+                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="ansver-wrapper">
+                            <div class="ansver-block">Хлопчатник</div>
+                            <div class="ansver-block">Крой</div>
+                            <div class="ansver-block">Нижняя часть</div>
+                        </div>
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="clear-canvas">
+                            <button class="clear-btn">Очистить ответ</button>
+                        </div>
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn-78">Назад</button>
+                                <button class="next-btn" onclick="proverka()">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle" data-button="task-2"></div>
+                                <div class="circle" data-button="task-3"></div>
+                                <div class="circle" data-button="task-4"></div>
+                                <div class="circle" data-button="task-5"></div>
+                                <div class="circle" data-button="task-6"></div>
+                                <div class="circle" data-button="task-7"></div>
+                                <div class="circle" data-button="task-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности 
+                </p>
+            </div>
+            <div class="delimiter footer-delimiter"></div> 
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Основы конструирования и моделирования швейных изделий
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    <script src="script/timer.js"></script>
+    <script src="script/canvas.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="../script/burger_script.js"></script>
+    <script src="script/task-switcher.js"></script>
+    <script src="../script/dark_theme_script.js"></script>
+    
+    <!-- Палатки -->
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
