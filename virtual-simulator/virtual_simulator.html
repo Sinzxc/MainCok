@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Иконки для разных платформ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#35d37d">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Виртуальный тренажер</title>
+</head>
+<body>
+    <!-- Тень для сайта при открытии блоков -->
+    <div class="shadow"></div>
+    
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <div class="professionalism">
+                    <div class="professionalism__title-wrap">
+                        <span class="professionalism__year">2023</span>
+                        <span class="professionalism__title">ПРОФЕССИОНАЛИТЕТ</span>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bricks.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/tent.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/parallelepiped.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/bus.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/ship.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/circle.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/mountain.svg" alt="img"></a></li>
+                            <li class="list__item"><a href="#" class="list__link"><img src="img/header_nav_icons/leaflet.svg" alt="img"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="header-title-wrap">
+                    <h2 class="header-title">МГГТК ФГБОУ ВО «АГУ»</h2>
+                    <p class="header__subtitle">Образовательный кластер «Образовательный центр индустрии туризма и сферы услуг Республики Адыгея»</p>
+                </div>
+    
+                <div class="logo-wrap">
+                    <img src="../img/logo/logo.svg" alt="logo" class="logo">
+                </div>
+    
+                <div class="home">
+                    <a href="../index.html"><img src="img/home.svg" alt="go home"></a>
+                </div>
+    
+                <button class="burger-btn">
+                    <img src="../img/burger.svg" alt="logo" class="burger-img">
+                    <img src="../img/burger-dark-mode.svg" alt="logo" class="burger-dark-img hide">
+                </button>
+    
+                <div class="right-side-menu">
+                    <button class="burger-btn-close">Закрыть</button>
+                    <div class="right-side-menu__block">
+                        <p class="right-side-menu__text">Включить / Выключить темную тему</p>
+                        <label class="switch-button" for="switch">
+                            <div class="switch-outer">
+                            <input id="switch" type="checkbox" class="dark2">
+                            <div class="button">
+                                <span class="button-toggle"></span>
+                                <span class="button-indicator"></span>
+                            </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /header__container -->
+    </header>
+
+    <main>
+        <section class="topic-section">
+            <div class="container">
+                <div class="topic-section__wrapper">
+                    <span class="topic-text">Тема:</span>
+                    <h1 class="topic-title">Гостеприимство – это кубок, наполненный добротой</h1>
+                    <p class="topic-subtitle">#Гостеприимство</p>
+                </div>
+                <!-- /topic-section__wrapper -->
+            </div>
+            <!-- /container -->
+        </section>
+        <!-- /topic-section -->
+
+        <section class="virtual-simulator-section">
+            <div class="container virtual-simulator__container">
+                <div class="card-navigation-line"></div>
+                <h4 class="virtual-simulator__title">Виртуальный тренажер</h4>
+
+                <div class="virtual-simulator__wrapper ">
+                    <div class="virtual-simulator__header">
+                        <div class="task-text-wrap">Задание: <br>
+                            <span class="task-text accent-color-text">Установите соответствия</span>
+                        </div>
+                        <div class="virtual-simulator__header-rigth-side">
+                            <div class="delimeter"></div>
+                            <div class="question"><img src="img/question.svg" alt="?">
+                                <div class="block-answer">
+                                    Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                                </div>
+                            </div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
+                            <div class="timer-wrap"><p class="timer">10:00</p></div>
+                        </div>
+                    </div>
+                    <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
+                    <div class="horizontal-delimeter"></div>
+
+                    <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
+                        <div class="connect-task__wrapper">
+                            <img src="img/картинки_для_задания_соединить/connect-img-1.jpg" alt="">
+                            <img src="img/картинки_для_задания_соединить/connect-img-2.jpg" alt="">
+                            <img src="img/картинки_для_задания_соединить/connect-img-3.jpg" alt="">
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
+                        </div>
+
+                        <div class="connect-task__answer-wrapper">
+                            <div class="connect__answer-block">Гостиница</div>
+                            <div class="connect__answer-block">Ресторан</div>
+                            <div class="connect__answer-block">Туристическое агенство</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-2">
+                        <form class="variants-checkbox">
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Вежливым и внимательным к гостям</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Красивым и добрым</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Готовым помочь и ответить на вопросы</p>
+                                </div>
+                            </div>
+                            <div class="variant-checkbox">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="text-otvet">
+                                    <p>Обеспечивать комфорт и удобство гостей</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-3">
+                        <form action="">
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-4">
+                        <div class="connect-task__wrapper">
+                            <div class="connet__quation-block">Стандартный номер</div>
+                            <div class="connet__quation-block">Делюкс номер</div>
+                            <div class="connet__quation-block">Сьют</div>
+                        </div>
+
+                        <div class="canvas-wrapper">
+                            <div class="canvas-container">
+                                <canvas class="canvas-2" width="300px" height="280px">ERROR</canvas>
+                            </div>
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img1 img12">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img2 img22">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img3 img32">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img4 img42">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img5 img52">
+                            <img src="img/circle-not-active.png" alt="" class="circle-img img6 img62">
+                        </div>
+
+                        <div class="connect-task__answer-wrapper">
+                            <div class="connect__answer-block">Просторный номер с отдельной гостиной и спальней</div>
+                            <div class="connect__answer-block">Уютный номер с базовыми удобствами</div>
+                            <div class="connect__answer-block">Роскошный номер с дополнительными удобствами и сервисомт</div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-5">
+                        <div class="one-varkik-wrap">
+                            <p class="one-varkik__quatain">Какое значение имеет гостеприимство в развитии туризма?</p>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                </div>
+                            </div>
+                            <div class="true-false__task">
+                                <div class="checkbox-wrap">
+                                    <input type="checkbox">
+                                    <i class="check"></i>
+                                </div>
+                                <div class="true-false__text-otvet">
+                                    <p>Гостеприимство включает в себя оказание добрых и гостеприимных услуг, заботу о клиентах и создание комфортной атмосферы. Кубок символизирует щедрость, внимание и доброту, которые проявляются при предоставлении услуг гостеприимства</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-6">
+                        <form action="">
+                            <div class="text-block">
+                                1. «Невероятный вид на океан и роскошные номера с собственными балконами»<br>
+                                2. «Аутентичная кухня средиземноморского региона и уютная атмосфера»<br>
+                                3. «Организация незабываемых туров по историческим достопримечательностям со знатоками местной культуры»<br>
+                                4. «Просторные номера с собственными камиными и садами, идеальные для уединенного отдыха»<br>
+                                5. «Инновационные блюда, созданные звездным шеф-поваром, и ресторан с исключительным интерьером»<br>
+                                6. «Активный отдых и приключенческие туры в горной местности или на водных трассах»<br>
+                                7. «Уникальные спа-процедуры и релаксационные массажи в специально оборудованном спа-салоне»<br>
+                                8. «Изысканные номера и первоклассное обслуживание в центре города с богатой историей»<br>
+                                9. «Регулярные экскурсии и мероприятия, чтобы открыть местную культуру и традиции гостям»<br>
+                                10. «Идеальные места для проведения деловых встреч и конференций с просторными комнатами и современными удобствами»<br>
+                            </div>
+                            <div class="answers_wrap">
+                                <div class="answers-titles">
+                                    <p>Гостиница:</p>
+                                    <p>Ресторан:</p>
+                                    <p>Туристическое агентство:</p>
+                                </div>
+                                <div class="answers">
+                                    <input class="answer1" type="text">
+                                    <input class="answer2" type="text">
+                                    <input class="answer3" type="text">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-7">
+                        СОЕДИНЕНИЕ ВТОРОЕ НЕ ПОЛУЧАЕТСЯ
+                    </div>
+
+                    <div class="practice-part-wrap" id="task-8">
+                        БУДЕТ СМЕШНО, НО ТРЕТЬЕ СОЕДИНЕНИЕ ТОЖЕ НЕ ПОЛУЧАЕТСЯ
+                    </div>
+
+                    <div class="virtual-simulator__footer">
+                        <div class="clear-canvas">
+                            <button class="clear-btn">Очистить ответ</button>
+                        </div>
+                        <div class="right-side">
+                            <div class="right-side_btn-wrap">
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
+                            </div>
+                            <div class="right-side__circles">
+                                <div class="circle circle_active" data-button="task-1"></div>
+                                <div class="circle" data-button="task-2"></div>
+                                <div class="circle" data-button="task-3"></div>
+                                <div class="circle" data-button="task-4"></div>
+                                <div class="circle" data-button="task-5"></div>
+                                <div class="circle" data-button="task-6"></div>
+                                <div class="circle" data-button="task-7"></div>
+                                <div class="circle" data-button="task-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left-side">
+                <h4 class="footer-title">
+                    ФГОС СПО 29.02.10 
+                </h4>
+                <p class="footer-subtitle">
+                    Туризм и гостеприимство
+                </p>
+            </div>
+            <div class="footer__right-side">
+                <h4 class="footer-title">
+                    МДК.02.01 
+                </h4>
+                <p class="footer-subtitle">
+                    Изучение основ делопроизводства и этика делового общения
+                </p>
+            </div>
+        </div>
+        <!-- /footer__wrapper -->
+    </footer>
+
+    
+    <script src="script/timer.js"></script>
+    <script src="script/canvas.js"></script>
+    
+    <script src="../script/script.js"></script>
+    <script src="../script/burger_script.js"></script>
+    <script src="script/task-switcher.js"></script>
+    <script src="../script/dark_theme_script.js"></script>
+    
+    <!-- Палатки -->
+    <div class="tent tent-1"></div>
+    <div class="tent tent-2"></div>
+    <div class="tent tent-3"></div>
+    <div class="tent tent-4"></div>
+</body>
