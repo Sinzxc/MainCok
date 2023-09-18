@@ -17,6 +17,11 @@
     margin-bottom: 14px;
 }
 
+.practice-part-wrap--active {
+    display: flex;
+}
+
+
 .virtual-simulator__wrapper {
     max-width: 825px;
     margin: 0 auto;
@@ -31,14 +36,120 @@
     align-items: center;
     padding: 0 8px 0 23px;
     margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.task-text {
+.task-text-wrap {
+    width: 55%;
+    min-height: 87px;
     color: var(--text-color);
     font-family: 'Dela Gothic One';
     font-size: 20px;
     font-weight: 400;
-    line-height: 29px;
+    line-height: 1.2;
+}
+
+.task-text {
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.accent-color-text {
+    color: var(--accent-color);
+}
+
+input{
+    width: 14px;
+    background-color: #ffffff;
+    position: relative;
+}
+input[type="checkbox"]{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 0;
+    z-index: 100;
+    opacity: 0;
+    cursor: pointer;
+}
+i{
+    top: -54px;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    border: #D9D9D9 2px solid; 
+    border-radius: 23px;
+}
+i::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-repeat: no-repeat;
+    border: #3CBA94 2px solid;
+    border-radius: 5px;
+    top: 15%;
+    right: 17%;
+
+}
+i::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Vector.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 23px;
+    transform: scale(0);
+    top: 30%;
+    left:25%;
+}
+input[type="checkbox"]:checked+i::before{
+   transform: scale(1);
+}
+
+.variant-checkbox {
+    display: flex;
+    justify-content:space-between;
+    gap: 20px;
+}
+
+.checkbox-wrap {
+    height: 50px;
+    width: 50px;
+}
+
+.variant-checkbox + .variant-checkbox {
+    margin-top: 20px;
+}
+
+
+
+.text-otvet {
+    font-weight: 700;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: 1px solid #3CBA94;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+@media (max-width: 525px) {
+    .text-otvet {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 525px) {
+    .text-otvet {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
 }
 
 .accent-color-text {
@@ -116,8 +227,13 @@
 .practice-part-wrap {
     position: relative;
     max-width: 620px;
-    height: 350px;
+    min-height: 350px;
+    display: none;
     margin: 30px auto 0;
+}
+
+.practice-part-wrap--active {
+    display:block;
 }
 
 .answer-block {
@@ -269,4 +385,33 @@ form {
     .number span {
         font-size: 16px;
     }
+}
+
+.back-btn,
+.next-btn, .circle {
+    cursor: pointer;
+}
+
+.circle_active {
+    background-color: var(--accent-color);
+}
+.task-img img {
+    display: inline;
+    margin-bottom: 30px;
+}
+.task-img {
+    text-align: center;
+}
+
+.task-two-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-block img {
+    margin-bottom: 30px;
+}
+
+.img-block .checkbox-wrap {
+    margin: 0 auto;
 }

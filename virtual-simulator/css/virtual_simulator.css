@@ -161,7 +161,7 @@
     height: 100px;
     background-color: #000;
 }
-.answers{
+.answers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -432,13 +432,18 @@ form {
     height: 100px;
     background-color: #000;
 }
-.answers{
+.answers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.answers-titles{
+.answers-titles {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
+.connect__answer-block {
+    padding: 10px 15px;
+}
+
