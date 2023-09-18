@@ -19,8 +19,7 @@ for(i = 0; i < circles.length; i++) {
         console.log(button)
 
         document.querySelector(`#${button}`).classList.add('practice-part-wrap--active');
-        tabTarget.classList.add('circle_active');
-      
+        tabTarget.classList.add('circle_active');      
     })
 }
 
@@ -44,7 +43,7 @@ const nextBtn = document.querySelector('.next-btn')
 
 nextBtn.addEventListener('click',()=> {
     console.log(numtaskNow)
-    if(numtaskNow < 5) {
+    if(numtaskNow < 8) {
         for(i = 0; i < circles.length; i++) {
             circles[i].classList.remove('circle_active');taskWraps[i].classList.remove('practice-part-wrap--active')
         }

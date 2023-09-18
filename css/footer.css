@@ -1,96 +1,57 @@
 .footer {
-    margin-top: auto;
-    border-top: 2px solid var(--border-color);
     padding: 22px 0;
+    border-top: 1px solid #454141;
 }
-
 .footer__wrapper {
-    margin: 0 auto;
-    max-width: 814px;
-    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-}
-
-.footer-title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 29px;
-    color: var(--accent-color);
-}
-
-.footer-subtitle {
-    color: var(--text-color);
+    align-items: start;
+    justify-content: center;
+    max-width:900px;
+    margin: 0 auto;
+    gap: 60px;
+    position: relative;
+    color: #1D1D1B;
+    font-family: Montserrat;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 18px;
+    padding: 0 10px;
 }
-
+.footer__wrapper::before{
+    content: "";
+    position: absolute;
+    width: 3.123px;
+    height: 50%;
+    background: #3CBA94;
+    left: calc(50%);
+    top: calc(25%);
+}
 .footer__left-side {
-    max-width: 385px;
+    display: block;
+    width: 387px;
 }
-
-.footer-delimiter {
-    height: 50px;
-    width: 4px;
-}
-
-@media (max-width: 768px) {
-    .footer {
-        margin-top: auto;
-        border-top: 2px solid var(--border-color);
-        padding: 9px 0;
-    }
-
-    .footer-title {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .footer-subtitle {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-
-@media (max-width: 450px) {
-    .footer {
-        padding: 8px 0;
-    }
-
-    .footer-title {
-        font-size: 14px;
-        line-height: 22px;
-    }
-    .footer-subtitle {
-        font-size: 10px;
-        line-height: 12px;
-    }
+.footer-title {
+    color: #3CBA94;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
     
-    .footer-delimiter {
-        height: 60px;
-        width: 4px;
-    }
+}
+.footer-subtitle {
+}
+.footer__right-side {
+    display: block;
+    width: 387px;
 }
 
-@media (max-width: 375px) {
-        .footer {
-        padding: 6px 0;
-    }
-
-    .footer-title {
+@media (max-width:850px) {
+    .footer__wrapper{
         font-size: 12px;
-        line-height: 20px;
     }
-    .footer-subtitle {
-        font-size: 8px;
-        line-height: 10px;
-    }
-    
-    .footer-delimiter {
-        height: 50px;
-        width: 4px;
-    }
+}
+@media (max-width:550px) {
+   .footer-title{
+    font-size: 18px;
+   }
+   .footer__wrapper{
+    font-size: 10px;
+   }
 }

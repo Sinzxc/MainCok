@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Стили -->
     <link rel="stylesheet" href="css/index.css">
-    <title>Сайт ЦОК</title>
+    <title>Виртуальный тренажер</title>
 </head>
 <body>
     <!-- Тень для сайта при открытии блоков -->
@@ -85,13 +85,14 @@
                 <div class="topic-section__wrapper">
                     <span class="topic-text">Тема:</span>
                     <h1 class="topic-title">Проектирование конструкций поясных изделий женской одежды</h1>
-                    <p class="topic-subtitle">#Конструирование, моделирование и технология изготовления изделий легкой промышленности</p>
+                    <p class="topic-subtitle">#Проектирование конструкций поясных изделий женской одежды</p>
                 </div>
                 <!-- /topic-section__wrapper -->
             </div>
             <!-- /container -->
         </section>
         <!-- /topic-section -->
+
         <section class="virtual-simulator-section">
             <div class="container virtual-simulator__container">
                 <div class="card-navigation-line"></div>
@@ -99,240 +100,208 @@
 
                 <div class="virtual-simulator__wrapper ">
                     <div class="virtual-simulator__header">
-                        <div class="task-text">Задание: <br>
-                            <span class="accent-color-text">Установите соответствия</span>
+                        <div class="task-text-wrap">Задание: <br>
+                            <span class="task-text accent-color-text">Установите соответствия</span>
                         </div>
-                        <div class="delimeter"></div>
-                        <div class="question"><img src="img/question.svg" alt="?">
-                            <div class="block-answer">
-                                Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                        <div class="virtual-simulator__header-rigth-side">
+                            <div class="delimeter"></div>
+                            <div class="question"><img src="img/question.svg" alt="?">
+                                <div class="block-answer">
+                                    Ваша задача состоит в том, чтобы соединить вопрос с ответом круглишками слева направо
+                                </div>
                             </div>
+                            <div class="number"><span class="num-now">1</span><span class="all-num">5</span></div>
+                            <div class="timer-wrap"><p class="timer">10:00</p></div>
                         </div>
-                        <div class="number"><span class="num-now">1</span><span class="all-num">8</span></div>
-                        <div class="timer-wrap"><p class="timer">10:00</p></div>
                     </div>
                     <!-- серая разделительная черта, нужна тк там округление и через бордер его не получить, либо я чего то не знаю -->
                     <div class="horizontal-delimeter"></div>
 
                     <div class="practice-part-wrap practice-part-wrap--active" id="task-1">
-                        <div class="task-wrapper">
-                            <div class="quation-block quation-block-1" style="width: 250px;">Доброта</div>
-                            <div class="quation-block quation-block-2" style="width: 250px;">Гостеприимство</div>
-                            <div class="quation-block quation-block-3" style="width: 250px;">Доброта</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Вежливое и щедрое отношение к гостям или посетителям.</div>
-                            <div class="ansver-block">Благожелательность и забота о благополучии других людей.</div>
-                            <div class="ansver-block">Символ награды и признания за гостеприимство и доброту.</div>
-                        </div>
+                        <h4 class="quation-text">Выберите правильный вариант приема конструктивного моделирования.</h4>
+                        <div class="varian-with-img">
+                            <img src="img/img12.png" alt="">
+                            <form class="variants-checkbox">
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Коническое расширение;</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Коническое заужение;</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Параллельное расширение</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>   
                     </div>
 
                     <div class="practice-part-wrap" id="task-2">
-                        <form action="">
-                            <div class="varian-radio">
-                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
-                                <div class="text-otvet">
-                                    <p>Вежливое и щедрое отношение к гостям или посетителям.</p>
+                        <h4 class="quation-text">Выберите правильный вариант приема конструктивного моделирования.</h4>
+                        <div class="varian-with-img">
+                            <img src="img/img13.png" alt="">
+                            <form class="variants-checkbox">
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Коническое расширение;</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="varian-radio">
-                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
-                                <div class="text-otvet">
-                                    <p>Кубок наполнен добротой и гостеприимством.</p>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Коническое заужение;</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="varian-radio">
-                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
-                                <div class="text-otvet">
-                                    <p>Доброта и гостеприимство не связаны друг с другом</p>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>Параллельное расширение</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="varian-radio">
-                                <input type="checkbox" class="checkbox"><span class="check-style"></span>
-                                <div class="text-otvet">
-                                    <p>Гостеприимство может проявляться через разные действия, не только доброту.</p>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>   
                     </div>
 
                     <div class="practice-part-wrap" id="task-3">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка?3</div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
-                        </div>
+                        <h4 class="quation-text">Куда переходит талиевая вытачка при проектировании данной юбки?</h4>
+                        <div class="varian-with-img">
+                            <img src="img/img14.png" alt="">
+                            <form class="variants-checkbox">
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в линию рельефа</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в драпировку</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в верхний срез юбки</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
                     </div>
 
                     <div class="practice-part-wrap" id="task-4">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка?4</div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
-                        </div>
+                        <h4 class="quation-text">Куда переходит талиевая вытачка при проектировании данных брюк?</h4>
+                        <div class="varian-with-img">
+                            <img src="img/img15.png" alt="">
+                            <form class="variants-checkbox">
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в линию рельефа</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в кокетку</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в верхний срез брюк</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div> 
                     </div>
 
                     <div class="practice-part-wrap" id="task-5">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка?5</div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
-                        </div>
-                    </div>
-
-                    <div class="practice-part-wrap" id="task-6">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка?6 </div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
-                        </div>
-                    </div>
-
-                    <div class="practice-part-wrap" id="task-7">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка? 7</div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
-                        </div>
-                    </div>
-
-                    <div class="practice-part-wrap" id="task-8">
-                        <div class="task-wrapper">
-                            <div class="quation-block" style="width: 250px;">Что такое обтачка? 8</div>
-                            <div class="quation-block" style="width: 250px;">Какие детали имеет фартук на поясе?</div>
-                            <div class="quation-block" style="width: 250px;">Из чего получают хлопчатобумажные ткани?</div>
-                        </div>
-
-                        <div class="canvas-wrapper">
-                            <div class="canvas-container">
-                                <canvas class="canvas" width="300px" height="280px">ERROR</canvas>
-                            </div>
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img1">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img2">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img3">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img4">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img5">
-                            <img src="img/circle-not-active.png" alt="" class="circle-img img6">
-                        </div>
-
-                        <div class="ansver-wrapper">
-                            <div class="ansver-block">Хлопчатник</div>
-                            <div class="ansver-block">Крой</div>
-                            <div class="ansver-block">Нижняя часть</div>
+                        <h4 class="quation-text">Куда переходит талиевая вытачка при проектировании данной юбки?</h4>
+                        <div class="varian-with-img">
+                            <img src="img/img16.png" alt="">
+                            <form class="variants-checkbox">
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в линию рельефа</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в кокетку</p>
+                                    </div>
+                                </div>
+                                <div class="variant-checkbox">
+                                    <div class="checkbox-wrap">
+                                        <input type="checkbox">
+                                        <i class="check"></i>
+                                    </div>
+                                    <div class="text-otvet">
+                                        <p>в верхний срез брюк</p>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
                     <div class="virtual-simulator__footer">
-                        <div class="clear-canvas">
-                            <button class="clear-btn">Очистить ответ</button>
-                        </div>
                         <div class="right-side">
                             <div class="right-side_btn-wrap">
-                                <button class="back-btn-78">Назад</button>
-                                <button class="next-btn" onclick="proverka()">Далее</button>
+                                <button class="back-btn">Назад</button>
+                                <button class="next-btn">Далее</button>
                             </div>
                             <div class="right-side__circles">
                                 <div class="circle circle_active" data-button="task-1"></div>
@@ -340,9 +309,6 @@
                                 <div class="circle" data-button="task-3"></div>
                                 <div class="circle" data-button="task-4"></div>
                                 <div class="circle" data-button="task-5"></div>
-                                <div class="circle" data-button="task-6"></div>
-                                <div class="circle" data-button="task-7"></div>
-                                <div class="circle" data-button="task-8"></div>
                             </div>
                         </div>
                     </div>
@@ -358,13 +324,12 @@
                     ФГОС СПО 29.02.10 
                 </h4>
                 <p class="footer-subtitle">
-                    Конструирование, моделирование и технология изготовления изделий легкой промышленности 
+                    Конструирование, моделирование и технология изготовления изделий легкой промышленности
                 </p>
             </div>
-            <div class="delimiter footer-delimiter"></div> 
             <div class="footer__right-side">
                 <h4 class="footer-title">
-                    МДК.02.01 
+                    МДК 02.01
                 </h4>
                 <p class="footer-subtitle">
                     Основы конструирования и моделирования швейных изделий
@@ -374,8 +339,9 @@
         <!-- /footer__wrapper -->
     </footer>
 
+    
     <script src="script/timer.js"></script>
-    <script src="script/canvas.js"></script>
+    
     <script src="../script/script.js"></script>
     <script src="../script/burger_script.js"></script>
     <script src="script/task-switcher.js"></script>
